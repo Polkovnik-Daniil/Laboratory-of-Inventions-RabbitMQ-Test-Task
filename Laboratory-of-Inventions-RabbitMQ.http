@@ -1,0 +1,6 @@
+@Laboratory_of_Inventions_RabbitMQ_HostAddress = http://localhost:5057
+
+GET {{Laboratory_of_Inventions_RabbitMQ_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
