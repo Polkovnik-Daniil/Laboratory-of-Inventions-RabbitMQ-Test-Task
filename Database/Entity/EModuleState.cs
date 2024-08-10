@@ -1,4 +1,5 @@
-﻿public enum EModuleState
+﻿[Serializable]
+public enum EModuleState
 {
     Online,
     Run,

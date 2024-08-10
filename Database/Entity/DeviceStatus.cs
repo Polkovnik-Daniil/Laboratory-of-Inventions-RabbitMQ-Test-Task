@@ -1,14 +1,16 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
+﻿using Laboratory_of_Inventions_RabbitMQ.Models;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Laboratory_of_Inventions_RabbitMQ.Database.Entity
 {
+    [Serializable]
     public class DeviceStatus
     {
-        public string ModuleCategoryID;
-        public EModuleState ModuleState;
+        public string ModuleCategoryID { get; set; }
         [NotMapped]
-        public int IndexWithinRole;
+        public int IndexWithinRole { get; set; }
         [NotMapped]
-        public string RapidControlStatus;
+        public RapidControlStatus RapidControlStatus { get; set; }
+        public DeviceStatus() { }
     }
 }
